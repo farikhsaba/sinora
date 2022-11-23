@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+		<title>APLIKASI PENOMORAN SURAT</title>
+		        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!-- Style FAQ-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+body {
+	background: #fff;
+}
+.accordion .card {
+	background: none;
+	border: none;
+}
+.accordion .card .card-header {
+	background: none;
+	border: none;
+	padding: .4rem 1rem;
+	font-family: "Roboto", sans-serif;
+}
+.accordion .card-header h2 span {
+	float: left;
+	margin-top: 10px;
+}
+.accordion .card-header .btn {
+	color: #2f2f31;
+	font-size: 1.04rem;
+	text-align: left;
+	position: relative;
+	font-weight: 500;
+	padding-left: 2rem;
+}
+.accordion .card-header i {
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+.accordion .card-header .btn:hover {
+	color: #ff8300;
+}
+.accordion .card-body {
+	color: #324353;
+	padding: 0.5rem 3rem;
+}
+.page-title {
+	margin: 3rem 0 3rem 1rem;
+	font-family: "Roboto", sans-serif;
+	position: relative;
+}
+.page-title::after {
+	content: "";
+	width: 80px;
+	position: absolute;
+	height: 3px;
+	border-radius: 1px;
+	background: #73bb2b;
+	left: 0;
+	bottom: -15px;
+}
+.accordion .highlight .btn {
+	color: #74bd30;
+}
+.accordion .highlight i {
+	transform: rotate(180deg);
+}
+</style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+         
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-md-nowrap p-1 shadow">
+                <div class="container-fluid">
+           <a class="navbar-brand text-light" href="index.html" ><i class="fa-solid fa-file-signature"></i> SINORA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+			<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
+			<li class="nav-item"><a class="nav-link" href="panduan.html">Panduan</a></li>
+			<li class="nav-item"><a class="nav-link" href="korespondensi.html">Korespondensi</a></li>
+			<li class="nav-item"><a class="nav-link" href="nodin.html">Nodin</a></li>
+			<li class="nav-item"><a class="nav-link" href="arahan.html">Arahan</a></li>
+			<li class="nav-item"><a class="nav-link" href="khusus.html">Khusus</a></li>
+			<li class="nav-item"><a class="nav-link" href="lainnya.html">Lainnya</a></li>
+		</ul>
+                    </div>
+                </div>
+            </nav>
+       
+            <!-- Page content-->
+                
+                <div class="container-lg">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-title">Panduan Penomoran Naskah Dinas</h1>
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="clearfix mb-0">
+							<a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>PANDUAN UMUM</a>									
+						</h2>
+					</div>
+					<div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body"><p>Penomoran Naskah Dinas dibedakan menjadi 5 kategori yaitu:<br>
+							<b>1. Nota Dinas</b><br>
+							<b>2. Surat Korespondensi</b><br>
+							<b>3. Surat Arahan</b><br>
+							<b>4. Surat Khusus</b><br>
+							<b>5. Naskah Dinas Lainnya</b>
+							</p>
+						<p>Silakan menuju menu terkait untuk mengajukan penomoran pada masing-masing jenis naskah tersebut.</p>
+						<p>Untuk melihat Kode Klasifikasi, silakan menuju menu kode klasifikasi.</p></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> NOTA DINAS</a>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">Menu ini dapat digunakan untuk memberi penomoran nota dinas dan memorandum.<br>
+							<br><p><b>FORMAT PENOMORAN NOTA DINAS</b><br>
+								<b>NOMOR: HM.02.01/2/DPDRI.DIY/ND/V/2021</b><br><br>
+								HM.02.01 : Kode klasifikasi arsip<br>
+								2 : Nomor urut nota dinas dalam satu tahun<br>
+								DPDRI.DIY: Nama Unit Kerja pembuat nota dinas <br>
+								V : Bulan dalam romawi<br>
+								2021 : Tahun terbit</p></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> SURAT KORESPONDENSI</a>                     
+						</h2>
+					</div>
+					<div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">Menu ini dapat digunakan untuk memberi penomoran surat dinas, surat internal dan surat eksternal dan memorandum.<br>
+							<br><p><b>FORMAT PENOMORAN SURAT KORESPONDENSI</b><br>
+								<b>NOMOR: AM.02/2/DPDRI.DIY/V/2022</b><br><br>
+								AM.02 : Kode klasifikasi arsip<br>
+								2 : Nomor urut naskah dinas dalam satu tahun<br>
+								DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
+								V : Bulan dalam romawi<br>
+								2022 : Tahun terbit</p></div>
+				
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i> NASKAH DINAS ARAHAN (SURAT TUGAS) </a>                               
+						</h2>
+					</div>
+					<div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordionExample">
+						<div class="card-body">Naskah Dinas Arahan terdiri dari <br><p>a. Naskah Dinas Pengaturan<br>
+							1) Peraturan Sekretaris Jenderal<br>
+							2) Instruksi<br>
+							3) Surat Edaran <br>
+							4) Standar Operasional Presedur<br><br>
+							b. Naskah Dinas Penetapan<br>
+							1) Keputusan Sekretaris Jenderal <br>
+							c. Naskah Dinas Penugasan (Surat Tugas)<br><br>Namun pada Kantor DPD RI naskah dinas arahan yang sering digunakan hanya surat tugas. <br>Sehingga contoh penomoran mengikuti format surat tugas.  
+							</p>
+							<p><b>FORMAT PENOMORAN SURAT TUGAS</b><br>
+								<b>NOMOR: AM.02/2/DPDRI.DIY/V/2022</b><br><br>
+								AM.02 : Kode klasifikasi arsip<br>
+								2 : Nomor urut naskah dinas dalam satu tahun<br>
+								DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
+								V : Bulan dalam romawi<br>
+								2022 : Tahun terbit</p></div>
+					</div>
+				</div>
+              <div class="card">
+					<div class="card-header" id="headingFive">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i class="fa fa-chevron-circle-down"></i> SURAT KHUSUS </a>                               
+						</h2>
+					</div>
+              <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordionExample">
+				<div class="card-body"><p>Surat Khusus, meliputi jenis naskah dinas sebagai berikut:<br>
+					a. Nota Kesepahaman (MoU)/Perjanjian Dalam dan Luar Negeri.<br>
+					b. Surat Kuasa<br>
+					c. Berita Acara <br>
+					d. Surat Keterangan<br>
+					e. Tanda Terima<br>
+					f. Pengumuman<br>
+					g. Laporan: <br>
+						1) Laporan Pelaksanaan Kegiatan<br>
+						2) Laporan Hasil Pengolahan Aspirasi Masyarakat Dan Daerah<br>
+						3) Laporan kegiatan Anggota pada masa kegiatan di daerah pemilihan <br>
+						4) Laporan Kinerja/Pelaksana Tugas <br>
+					h. Telaah Staf<br><br>Format penomoran Surat Khusus umumnya mengikuti pola sama.  
+					</p>
+					<p><b>FORMAT PENOMORAN SURAT KHUSUS</b><br>
+						<b>NOMOR: AM.02/2/DPDRI.DIY/V/2022</b><br><br>
+						AM.02 : Kode klasifikasi arsip<br>
+						2 : Nomor urut naskah dinas dalam satu tahun<br>
+						DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
+						V : Bulan dalam romawi<br>
+						2022 : Tahun terbit</p></div>
+					</div>
+				</div>
+              <div class="card">
+					<div class="card-header" id="headingSix">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i class="fa fa-chevron-circle-down"></i> NASKAH DINAS LAINNYA </a>                               
+						</h2>
+					</div>
+              <div id="collapseSix" class="collapse hide" aria-labelledby="headingSix" data-parent="#accordionExample">
+				<div class="card-body"><p>Naskah Dinas Lainnya, terdiri dari: <br>
+					a. Risalah Sidang/Rapat <br>
+					b. Catatan Sidang/Rapat (Notulen<br>
+					c. Laporan Singkat<br>
+					d. Daftar Hadir<br>
+					e. Siaran Pers<br>
+					f. Pidato/Kata Sambutan <br>
+					g. Surat Cuti <br>
+					h. Surat Perjalanan Dinas<br>
+					i. Piagam <br>
+					j. Sertifikat<br>
+					k. Surat Pemberitahuan <br><br>Format penomoran Naskah Dinas Lainnya umumnya mengikuti pola sama.  
+					</p>
+					<br><p><b>FORMAT PENOMORAN NASKAH DINAS LAINNYA</b><br>
+						<b>NOMOR: HM.02.01/2/DPDRI.DIY/ND/V/2021</b><br><br>
+						HM.02.01 : Kode klasifikasi arsip<br>
+						2 : Nomor urut naskah dinas dalam satu tahun<br>
+						DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
+						V : Bulan dalam romawi<br>
+						2021 : Tahun terbit</p></div>
+					</div>
+				</div>
+              <div class="card">
+					<div class="card-header" id="headingSeven">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><i class="fa fa-chevron-circle-down"></i> KODE KLASIFIKASI</a>                     
+						</h2>
+					</div>
+					<div id="collapseSeven" class="collapse hide" aria-labelledby="headingSeven" data-parent="#accordionExample">
+						<div class="card-body"><p>Kode Klasifikasi digunakan untuk mengelompokkan jenis bidang yang sama dari setiap naskah dinas yang dihasilkan. Berikut adalah Kode Klasifikasi yang sering digunakan di Kantor Daerah: <br>
+							<table cellpadding="5" cellspacing="1" border="1">
+								<tr><td>Kode Klasifikasi</td><td>Jenis Arsip</td></tr>
+								<tr><td>RT.01.01</td><td>Ruang Rapat</td></tr>
+								<tr><td>AM.00</td><td>Penjaringan Aspirasi / Isu Dari Masyarakat / Konstituen</td></tr>
+								<tr><td>AM.01</td><td>Penjaringan Aspirasi / Isu Dari Pemerintah Daerah Dan DPRD</td></tr>
+								<tr><td>AM.02</td><td>Penjaringan Isu Pada Masa Reses</td></tr>
+								<tr><td>AM.03</td><td>Monitoring Kebijakan Daerah</td></tr>
+								<tr><td>AM.04</td><td>Kajian Terhadap Isu Stratregis Kedaerahan</td></tr>
+								<tr><td>AM.05</td><td>Diskusi Publik, Sosialisasi Pancasila</td></tr>
+								<tr><td>AM.06</td><td>Konsolidasi DPD RI dengan Stakeholder</td></tr>
+								<tr><td>AM.07</td><td>Advokasi dan Resolusi Permasalahan Daerah</td></tr>
+								<tr><td>AM.08</td><td>Simulasi Anggaran Pusat dan Daerah</td></tr>
+								<tr><td>HM.00</td><td>PENERANGAN DAN PUBLIKASI</td></tr>
+								<tr><td>HM.02.00</td><td>Instansi / Pemerintah</td></tr>
+								<tr><td>HM.02.03</td><td>Organisasi Kemasyarakatan</td></tr>
+								<tr><td>HM.02.04</td><td>Perguruan Tinggi / Sekolah</td></tr>
+								<tr><td>HM.03.01</td><td>Kunjungan</td></tr>
+								<tr><td>HM.09.00</td><td>Layanan Website</td></tr>
+								<tr><td>HM.09.01</td><td>Layanan Informasi Publik</td></tr>
+								<tr><td>HM.10</td><td>PENGADUAN MASYARAKAT</td></tr>
+								<tr><td>PL.01.07</td><td>Jasa Lainya</td></tr>
+								<tr><td>KP.18.00</td><td>Magang Mahasiswa</td></tr>
+								<tr><td>KU.04.02</td><td>Laporan Keuangan</td></tr>
+								<tr><td>KU.05.00</td><td>Keterangan Penghasilan</td></tr>
+								<tr><td>PR.04.02</td><td>Revisi DIPA dan POK Kuasa Pengguna Anggaran (KPA)</td></tr>
+								<tr><td>RT.00</td><td>PERJALANAN DINAS PIMPINAN DPD RI</td></tr>
+								<tr><td></td><td></td></tr>
+								</table><br><br><b>DAFTAR LENGKAP KODE KLASIFIKASI</b>  
+							</p>
+							<br><p><table cellpadding="5" cellspacing="1" border="1">
+								<tr><td>Kode Klasifikasi</td><td>Jenis Arsip</td></tr>
+								<tr><td>KP</td><td>KEPEGAWAIAN</td></tr></b>
+								<tr><td>KP.00</td><td>BEZETTING / PERSEDIAAN PEGAWAI</td></tr></b>
+								<tr><td>KP.01</td><td>FORMASI PEGAWAI</td></tr></b>
+								<tr><td>KP.01.00</td><td>Usulan Unit Kerja</td></tr>
+								<tr><td>KP.01.01</td><td>Usulan Permintaan Formasi kepada MenPAN RB dan Kepala BKN</td></tr>
+								<tr><td>KP.01.02</td><td>Persetujuan/Penetapan Formasi</td></tr>
+								<tr><td>KP.01.03</td><td>Penetapan Formasi Khusus</td></tr>
+								<tr><td>KP.01.04</td><td>Panitia Seleksi</td></tr>
+								<tr><td>KP.02</td><td>PENGADAAN PEGAWAI</td></tr></b>
+								<tr><td>KP.02.00</td><td>Proses Penerimaan Pegawai Meliputi</td></tr>
+								<tr><td>KP.02.01</td><td>Prajabatan</td></tr>
+								<tr><td>KP.02.02</td><td>Pengangkatan CPNS menjadi PNS</td></tr>
+								<tr><td>KP.02.03</td><td>Penempatan CPNS</td></tr>
+								<tr><td>KP.03</td><td>UJIAN KENAIKAN PANGKAT / JABATAN</td></tr></b>
+								<tr><td>KP.03.00</td><td>Ujian Penyesuaian Ijazah</td></tr>
+								<tr><td>KP.03.01</td><td>Ujian Dinas</td></tr>
+								<tr><td>KP.04</td><td>PEMBINAAN KARIR PEGAWAI</td></tr>
+								<tr><td>KP.04.00</td><td>Ujian Dinas/Izin Belajar Pegawai/Ujian Penyesuaian Ijazah</td></tr>
+								<tr><td>KP.04.01</td><td>Assesment Test Pegawai/Ujian Kompetensi</td></tr>
+								<tr><td>KP.04.02</td><td>Pemetaan/Talent Mapping Pegawai</td></tr>
+								<tr><td>KP.04.03</td><td>Sasaran Kinerja Pegawai (SKP) bagi PNS</td></tr>
+								<tr><td>KP.04.04</td><td>Penilaian Prestasi Kerja</td></tr>
+								<tr><td>KP.04.05</td><td>Pakta Integritas Pegawai</td></tr>
+								<tr><td>KP.04.06</td><td>Pembinaan Mental Pegawai</td></tr>
+								<tr><td>KP.04.07</td><td>Disiplin Pegawai</td></tr>
+								<tr><td>KP.04.08</td><td>Berkas Hukuman Disiplin</td></tr>
+								<tr><td>KP.05</td><td>PERSELISIHAN / SENGKETA PEGAWAI</td></tr>
+								<tr><td>KP.06</td><td>MUTASI</td></tr>
+								<tr><td>KP.06.00</td><td>Kenaikan Pangkat/Golongan</td></tr>
+								<tr><td>KP.06.01</td><td>Kenaikan Gaji Berkala</td></tr>
+								<tr><td>KP.06.02</td><td>Penyesuaian Masa Kerja</td></tr>
+								<tr><td>KP.06.03</td><td>Penyesuaian Tunjangan Keluarga</td></tr>
+								<tr><td>KP.06.04</td><td>Penyesuaian Kelas Jabatan</td></tr>
+								<tr><td>KP.06.05</td><td>Rotasi Kerja</td></tr>
+								<tr><td>KP.06.06</td><td>Alih Tugas</td></tr>
+								<tr><td>KP.07</td><td>Administrasi Pegawai</td></tr>
+								<tr><td>KP.07.00</td><td>Data/Keterangan Pegawai</td></tr>
+								<tr><td>KP.07.01</td><td>Kartu Pegawai</td></tr>
+								<tr><td>KP.07.02</td><td>Karsi/Karsu</td></tr>
+								<tr><td>KP.07.03</td><td>Kartu Taspen</td></tr>
+								<tr><td>KP.07.04</td><td>Kartu Jaminan Kesehatan</td></tr>
+								<tr><td>KP.07.05</td><td>Tanda Jasa / Penghargaan</td></tr>
+								<tr><td>KP.07.06</td><td>Keterangan Penerimaan Pembayaran Penghasilan Pegawai (KP4)</td></tr>
+								<tr><td>KP.07.07</td><td>Laporan Harta Kekayaan Penyelenggara Negara (LHKPN)</td></tr>
+								<tr><td>KP.07.08</td><td>Tunjangan Kinerja dan Uang Makan</td></tr>
+								<tr><td>KP.07.09</td><td>Ijin Mengajar</td></tr>
+								<tr><td>KP.08</td><td>CUTI PEGAWAI</td></tr>
+								<tr><td>KP.08.00</td><td>Cuti Tahunan</td></tr>
+								<tr><td>KP.08.01</td><td>Cuti Besar</td></tr>
+								<tr><td>KP.08.02</td><td>Cuti Sakit</td></tr>
+								<tr><td>KP.08.03</td><td>Cuti Bersalin</td></tr>
+								<tr><td>KP.08.04</td><td>Cuti Karena Alasan Penting</td></tr>
+								<tr><td>KP.08.05</td><td>Cuti Di Luar Tanggungan Negara</td></tr>
+								<tr><td>KP.08.06</td><td>Cuti Bersama</td></tr>
+								<tr><td>KP.09</td><td>KESEJAHTERAAN</td></tr>
+								<tr><td>KP.09.00</td><td>Kesehatan Pegawai</td></tr>
+								<tr><td>KP.09.01</td><td>Rekreasi/Kesenian/Olahraga</td></tr>
+								<tr><td>KP.09.02</td><td>Bantuan Sosial</td></tr>
+								<tr><td>KP.09.03</td><td>Perumahan Pegawai</td></tr>
+								<tr><td>KP.10</td><td>PENGANGKATAN DAN PEMBERHENTIAN JABATAN</td></tr>
+								<tr><td>KP.10.00</td><td>Pengangkatan Jabatan Struktural</td></tr>
+								<tr><td>KP.10.01</td><td>Pemberhentian Jabatan Struktural</td></tr>
+								<tr><td>KP.11</td><td>PENDELEGASIAN WEWENANG</td></tr>
+								<tr><td>KP.11.00</td><td>Pelaksana Tugas (Plt)</td></tr>
+								<tr><td>KP.11.01</td><td>Pelaksana Harian (Plh)</td></tr>
+								<tr><td>KP.11.02</td><td>Penugasan Dalam Gugus Tugas (Adhoc)</td></tr>
+								<tr><td>KP.12</td><td>PENDIDIKAN DAN PELATIHAN PEGAWAI</td></tr>
+								<tr><td>KP.12.00</td><td>Progam Diploma</td></tr>
+								<tr><td>KP.12.01</td><td>Progam Sarjana</td></tr>
+								</table></p></div>					</div>
+				</div>
+              
+			</div>
+		</div>
+	</div>
+</div>
+             </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+       <!-- JS FAQ-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+$(document).ready(function(){
+	// Add minus icon for collapse element which is open by default
+	$(".collapse.show").each(function(){
+		$(this).prev(".card-header").addClass("highlight");
+	});
+	
+	// Highlight open collapsed element 
+	$(".card-header .btn").click(function(){
+		$(".card-header").not($(this).parents()).removeClass("highlight");
+		$(this).parents(".card-header").toggleClass("highlight");
+	});
+});
+</script>
+    </body>
+</html>
