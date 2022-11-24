@@ -83,7 +83,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
           
           function drawVisualization() {
             var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=14T0SxXdAWwHyJCTsq5HkOFn_9r_MlZkuEaQ4G3MFZFE&output=html&gid=0&range=A2:L&&usp=sharing');
-              query.setQuery('SELECT A, B, L, F, G, H, I, J label A "No", B "Tgl Surat", L "No Surat", F "Asal", G "Tujuan", H "Perihal", I "Tembusan", J "Pemohon"');
+              query.setQuery('SELECT A, B, L, F, G, H, I, J label A "No", B "Tgl Surat", L "No Surat", F "Asal", G "Tujuan", H "Isi Ringkas", I "Tembusan", J "Pemohon"');
               query.send(handleQueryResponse);
           }
           
