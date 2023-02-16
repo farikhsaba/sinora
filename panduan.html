@@ -90,20 +90,50 @@ body {
 	transform: rotate(180deg);
 }
 </style>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8zc3{background-color:#D6E3BC;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-jxgv{background-color:#FFF;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-z1ub{background-color:#F9CB9C;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-32fi{background-color:#D6E3BC;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-f8tv{border-color:inherit;font-style:italic;text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
     </head>
     <body>
         <div class="d-flex" id="wrapper">
          
         <!-- Page content wrapper-->
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+          <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">SINORA</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Beranda</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="panduan.html">Panduan</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="korespondensi.html">Korespondensi</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="nodin.html">Nodin</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="arahan.html">Arahan</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="khusus.html">Khusus</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="lainnya.html">Lainnya</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="edit.html">Edit</a>
+
+            </div>
+        </div>
+        <!-- Page content wrapper-->
         <div id="page-content-wrapper">
             <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-md-nowrap p-1 shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
-           <a class="navbar-brand text-light" href="index.html" ><i class="fa-solid fa-file-signature"></i> SINORA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 			<li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
 			<li class="nav-item"><a class="nav-link" href="panduan.html">Panduan</a></li>
@@ -112,6 +142,8 @@ body {
 			<li class="nav-item"><a class="nav-link" href="arahan.html">Arahan</a></li>
 			<li class="nav-item"><a class="nav-link" href="khusus.html">Khusus</a></li>
 			<li class="nav-item"><a class="nav-link" href="lainnya.html">Lainnya</a></li>
+					<li class="nav-item"><a class="nav-link" href="edit.html">Edit</a></li>
+
 		</ul>
                     </div>
                 </div>
@@ -167,8 +199,19 @@ body {
 					</div>
 					<div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
 						<div class="card-body">Menu ini dapat digunakan untuk memberi penomoran surat dinas, surat internal dan surat eksternal dan memorandum.<br>
-							<br><p><b>FORMAT PENOMORAN SURAT KORESPONDENSI</b><br>
+							<br><p><b>FORMAT PENOMORAN SURAT KORESPONDENSI memiliki 2 Format yang berbeda yaitu:</b><br>
+
+<br><p><b>1. SURAT DINAS, SURAT UNDANGAN INTERN</b><br>
 								<b>NOMOR: AM.02/2/DPDRI.DIY/V/2022</b><br><br>
+								AM.02 : Kode klasifikasi arsip<br>
+								2 : Nomor urut naskah dinas dalam satu tahun<br>
+								DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
+								V : Bulan dalam romawi<br>
+								2022 : Tahun terbit</p>
+<br><p><b>2. SURAT DINAS, SURAT UNDANGAN EKSTERN</b><br>
+
+								<b>NOMOR: B/AM.02/2/DPDRI.DIY/V/2022</b><br><br>
+								B : Derajat Keamanan (B= Biasa, T= Terbatas, R= Rahasia, SR= Sangat rahasia)<br>
 								AM.02 : Kode klasifikasi arsip<br>
 								2 : Nomor urut naskah dinas dalam satu tahun<br>
 								DPDRI.DIY: Nama Unit Kerja pembuat naskah dinas <br>
@@ -298,78 +341,1727 @@ body {
 								<tr><td></td><td></td></tr>
 								</table><br><br><b>DAFTAR LENGKAP KODE KLASIFIKASI</b>  
 							</p>
-							<br><p><table cellpadding="5" cellspacing="1" border="1">
-								<tr><td>Kode Klasifikasi</td><td>Jenis Arsip</td></tr>
-								<tr><td>KP</td><td>KEPEGAWAIAN</td></tr></b>
-								<tr><td>KP.00</td><td>BEZETTING / PERSEDIAAN PEGAWAI</td></tr></b>
-								<tr><td>KP.01</td><td>FORMASI PEGAWAI</td></tr></b>
-								<tr><td>KP.01.00</td><td>Usulan Unit Kerja</td></tr>
-								<tr><td>KP.01.01</td><td>Usulan Permintaan Formasi kepada MenPAN RB dan Kepala BKN</td></tr>
-								<tr><td>KP.01.02</td><td>Persetujuan/Penetapan Formasi</td></tr>
-								<tr><td>KP.01.03</td><td>Penetapan Formasi Khusus</td></tr>
-								<tr><td>KP.01.04</td><td>Panitia Seleksi</td></tr>
-								<tr><td>KP.02</td><td>PENGADAAN PEGAWAI</td></tr></b>
-								<tr><td>KP.02.00</td><td>Proses Penerimaan Pegawai Meliputi</td></tr>
-								<tr><td>KP.02.01</td><td>Prajabatan</td></tr>
-								<tr><td>KP.02.02</td><td>Pengangkatan CPNS menjadi PNS</td></tr>
-								<tr><td>KP.02.03</td><td>Penempatan CPNS</td></tr>
-								<tr><td>KP.03</td><td>UJIAN KENAIKAN PANGKAT / JABATAN</td></tr></b>
-								<tr><td>KP.03.00</td><td>Ujian Penyesuaian Ijazah</td></tr>
-								<tr><td>KP.03.01</td><td>Ujian Dinas</td></tr>
-								<tr><td>KP.04</td><td>PEMBINAAN KARIR PEGAWAI</td></tr>
-								<tr><td>KP.04.00</td><td>Ujian Dinas/Izin Belajar Pegawai/Ujian Penyesuaian Ijazah</td></tr>
-								<tr><td>KP.04.01</td><td>Assesment Test Pegawai/Ujian Kompetensi</td></tr>
-								<tr><td>KP.04.02</td><td>Pemetaan/Talent Mapping Pegawai</td></tr>
-								<tr><td>KP.04.03</td><td>Sasaran Kinerja Pegawai (SKP) bagi PNS</td></tr>
-								<tr><td>KP.04.04</td><td>Penilaian Prestasi Kerja</td></tr>
-								<tr><td>KP.04.05</td><td>Pakta Integritas Pegawai</td></tr>
-								<tr><td>KP.04.06</td><td>Pembinaan Mental Pegawai</td></tr>
-								<tr><td>KP.04.07</td><td>Disiplin Pegawai</td></tr>
-								<tr><td>KP.04.08</td><td>Berkas Hukuman Disiplin</td></tr>
-								<tr><td>KP.05</td><td>PERSELISIHAN / SENGKETA PEGAWAI</td></tr>
-								<tr><td>KP.06</td><td>MUTASI</td></tr>
-								<tr><td>KP.06.00</td><td>Kenaikan Pangkat/Golongan</td></tr>
-								<tr><td>KP.06.01</td><td>Kenaikan Gaji Berkala</td></tr>
-								<tr><td>KP.06.02</td><td>Penyesuaian Masa Kerja</td></tr>
-								<tr><td>KP.06.03</td><td>Penyesuaian Tunjangan Keluarga</td></tr>
-								<tr><td>KP.06.04</td><td>Penyesuaian Kelas Jabatan</td></tr>
-								<tr><td>KP.06.05</td><td>Rotasi Kerja</td></tr>
-								<tr><td>KP.06.06</td><td>Alih Tugas</td></tr>
-								<tr><td>KP.07</td><td>Administrasi Pegawai</td></tr>
-								<tr><td>KP.07.00</td><td>Data/Keterangan Pegawai</td></tr>
-								<tr><td>KP.07.01</td><td>Kartu Pegawai</td></tr>
-								<tr><td>KP.07.02</td><td>Karsi/Karsu</td></tr>
-								<tr><td>KP.07.03</td><td>Kartu Taspen</td></tr>
-								<tr><td>KP.07.04</td><td>Kartu Jaminan Kesehatan</td></tr>
-								<tr><td>KP.07.05</td><td>Tanda Jasa / Penghargaan</td></tr>
-								<tr><td>KP.07.06</td><td>Keterangan Penerimaan Pembayaran Penghasilan Pegawai (KP4)</td></tr>
-								<tr><td>KP.07.07</td><td>Laporan Harta Kekayaan Penyelenggara Negara (LHKPN)</td></tr>
-								<tr><td>KP.07.08</td><td>Tunjangan Kinerja dan Uang Makan</td></tr>
-								<tr><td>KP.07.09</td><td>Ijin Mengajar</td></tr>
-								<tr><td>KP.08</td><td>CUTI PEGAWAI</td></tr>
-								<tr><td>KP.08.00</td><td>Cuti Tahunan</td></tr>
-								<tr><td>KP.08.01</td><td>Cuti Besar</td></tr>
-								<tr><td>KP.08.02</td><td>Cuti Sakit</td></tr>
-								<tr><td>KP.08.03</td><td>Cuti Bersalin</td></tr>
-								<tr><td>KP.08.04</td><td>Cuti Karena Alasan Penting</td></tr>
-								<tr><td>KP.08.05</td><td>Cuti Di Luar Tanggungan Negara</td></tr>
-								<tr><td>KP.08.06</td><td>Cuti Bersama</td></tr>
-								<tr><td>KP.09</td><td>KESEJAHTERAAN</td></tr>
-								<tr><td>KP.09.00</td><td>Kesehatan Pegawai</td></tr>
-								<tr><td>KP.09.01</td><td>Rekreasi/Kesenian/Olahraga</td></tr>
-								<tr><td>KP.09.02</td><td>Bantuan Sosial</td></tr>
-								<tr><td>KP.09.03</td><td>Perumahan Pegawai</td></tr>
-								<tr><td>KP.10</td><td>PENGANGKATAN DAN PEMBERHENTIAN JABATAN</td></tr>
-								<tr><td>KP.10.00</td><td>Pengangkatan Jabatan Struktural</td></tr>
-								<tr><td>KP.10.01</td><td>Pemberhentian Jabatan Struktural</td></tr>
-								<tr><td>KP.11</td><td>PENDELEGASIAN WEWENANG</td></tr>
-								<tr><td>KP.11.00</td><td>Pelaksana Tugas (Plt)</td></tr>
-								<tr><td>KP.11.01</td><td>Pelaksana Harian (Plh)</td></tr>
-								<tr><td>KP.11.02</td><td>Penugasan Dalam Gugus Tugas (Adhoc)</td></tr>
-								<tr><td>KP.12</td><td>PENDIDIKAN DAN PELATIHAN PEGAWAI</td></tr>
-								<tr><td>KP.12.00</td><td>Progam Diploma</td></tr>
-								<tr><td>KP.12.01</td><td>Progam Sarjana</td></tr>
-								</table></p></div>					</div>
+							<br><p><div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr"><span style="font-weight:bold">KP</span></th>
+    <th class="tg-0pky"><span style="font-weight:normal">KEPEGAWAIAN</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">BEZETTING / PERSEDIAAN PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">FORMASI PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Usulan Unit Kerja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Usulan Permintaan Formasi kepada MenPAN RB dan Kepala BKN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Persetujuan/Penetapan Formasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penetapan Formasi Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.01.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Panitia Seleksi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGADAAN PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Proses Penerimaan Pegawai Meliputi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Prajabatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.02.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengangkatan CPNS menjadi PNS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.02.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penempatan CPNS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">UJIAN KENAIKAN PANGKAT / JABATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Ujian Penyesuaian Ijazah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Ujian Dinas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMBINAAN KARIR PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Ujian Dinas/Izin Belajar Pegawai/Ujian Penyesuaian Ijazah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Assesment Test Pegawai/Ujian Kompetensi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemetaan/Talent Mapping Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sasaran Kinerja Pegawai (SKP) bagi PNS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penilaian Prestasi Kerja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pakta Integritas Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pembinaan Mental Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Disiplin Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.04.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Berkas Hukuman Disiplin</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERSELISIHAN / SENGKETA PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">MUTASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kenaikan Pangkat/Golongan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kenaikan Gaji Berkala</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyesuaian Masa Kerja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyesuaian Tunjangan Keluarga</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyesuaian Kelas Jabatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rotasi Kerja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.06.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Alih Tugas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Administrasi Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Data/Keterangan Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Karsi/Karsu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Taspen</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Jaminan Kesehatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tanda Jasa / Penghargaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Keterangan Penerimaan Pembayaran Penghasilan Pegawai (KP4)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Harta Kekayaan Penyelenggara Negara (LHKPN)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tunjangan Kinerja dan Uang Makan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.07.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Ijin Mengajar</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">CUTI PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Tahunan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Besar</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Sakit</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Bersalin</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Karena Alasan Penting</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Di Luar Tanggungan Negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.08.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Cuti Bersama</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KESEJAHTERAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.09.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kesehatan Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.09.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rekreasi/Kesenian/Olahraga</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.09.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Bantuan Sosial</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.09.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perumahan Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.10</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGANGKATAN DAN PEMBERHENTIAN JABATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.10.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengangkatan Jabatan Struktural</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.10.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemberhentian Jabatan Struktural</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.11</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENDELEGASIAN WEWENANG</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.11.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelaksana Tugas (Plt)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.11.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelaksana Harian (Plh)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.11.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penugasan Dalam Gugus Tugas (Adhoc)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.12</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENDIDIKAN DAN PELATIHAN PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Progam Diploma</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Progam Sarjana</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Progam Pasca Sarjana</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pendidikan dan Pelatihan Penjenjangan (Diklatpim)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kursus/Diklat Fungsional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kursus/Diklat Teknis</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.12.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Orientasi CPNS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.13</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMBINAAN JABATAN FUNGSIONAL</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengangkatan Jabatan Fungsional Tertentu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemindahan Jabatan Fungsional Tertentu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengangkatan Jabatan Fungsional Umum</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemindahan Jabatan Fungsional Umum</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kenaikan Jenjang Jabatan Fungsional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.13.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemberhentian Jabatan Fungsional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.14</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMBERHENTIAN PEGAWAI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.14.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dengan Hormat</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.14.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tidak Dengan Hormat</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.15</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMBERHENTIAN DAN PENETAPAN PENSIUN PEGAWAI/JANDA/DUDA/ PNS YANG TEWAS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.16</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERSONAL FILE/BERKAS PERSEORANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.17</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">ORGANISASI NON KEDINASAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.17.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KORPRI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.17.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dharma Wanita</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.17.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Koperasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.17.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Non Kedinasan Lainya</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KP.18</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">IJIN MAGANG DAN PENELITIAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-z1ub">KP.18.00</td>
+    <td class="tg-z1ub">Magang</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KP.18.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penelitian</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">ANGGOTA DEWAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelantikan Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERESMIAN KEANGGOTAAN DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penetapan Pimpinan DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pembentukan dan Penetapan Pimpinan dan Keanggotaan Alat Kelengkapan DPD RI serta Panitia Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Peresmian Keanggotaan Pengganti Antar Waktu (PAW)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Personal File Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kesejahteraan Anngota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Data / Keterangan Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.03.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Jaminan Kesehatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.03.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tanda Jasa</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.03.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Harta Kekayaan Penyelenggara Negara (LHKPN)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AD.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENSIUN ANGGOTA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.04.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemberhentian dengan hormat</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.04.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pensiun Habis Masa Jabatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AD.04.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemberhentian dan Penetapan Pensiun Anggota yang Tewas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KEUANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PELAKSANAAN ANGGARAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">RAB</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penerimaan/Pendapatan Anggaran</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.00.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengeluaran Anggaran / Belanja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGGAJIAN, TUNJANGAN DAN HONORARIUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Anggota Dewan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-jxgv">KU.01.01</td>
+    <td class="tg-jxgv">Pegawai</td>
+  </tr>
+  <tr>
+    <td class="tg-jxgv">KU.01.02</td>
+    <td class="tg-jxgv">Pegawai Pemerintah Non Pegawan Negeri dan Staf Anggota</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN PERBENDAHARAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perbendaharaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kartu Pengawasan Kredit</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pajak</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penerimaan Negara Bukan Pajak (PNBP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengembalian Belanja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Berita Acara Pemeriksaan Kas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tuntutan Ganti Rugi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pinjaman / Bantuan Luar Negeri</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Hibah Dalam dan Luar Negeri</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.02.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pembukuan Anggaran</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">VERIFIKASI ANGGARAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Verifikasi Anggaran Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Verifikasi Anggaran Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">AKUNTANSI DAN PELAPORAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.04.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rekonsiliasi Internal</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.04.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rekonsiliasi Eksternal</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.04.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Keuangan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.04.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Realisasi Penerimaan Negara Bukan Pajak (PNBP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KETATAUSAHAAN KEUANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">KU.05.00</td>
+    <td class="tg-32fi">Keterangan Penghasilan</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.05.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">SKPP</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.05.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Permohonan Pinjaman</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.05.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Iuran Keanggotaan Organisasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KU.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perjalanan Dinas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.06.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perjalanan Dinas Anggota</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KU.06.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perjalanan Dinas Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PERENCANAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">POKOK - POKOK KEBIJAKAN DAN STRATREGI PEMBANGUNAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rencana Pembangunan Jangka Panjang (RPJP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rencana Pembangunan Jangka Menengah (RPJM)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.00.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rencana Stratregis</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">RENCANA KERJA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Usulan Perencanaan Kegiatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rencana Kinerja Tahunan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rencana Kinerja berdasarkan Pagu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">New Initiatif</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENETAPAN KINERJA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERENCANAAN ANGGARAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Rencana Anggaran</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penerimaan Negara Bukan Pajak (PNBP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.03.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Standarisasi Harga Satuan Perencanaan Barang (SHSPB)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.03.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Standar Biaya</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">REVISI DOKUMEN ANGGARAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.04.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Revisi DIPA dan POK Dirjen Perbendaharaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.04.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Revisi DIPA dan POK Dirjen Anggaran</span></td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">PR.04.02</td>
+    <td class="tg-32fi">Revisi DIPA dan POK Kuasa Pengguna Anggaran (KPA)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.04.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Anggaran Belanja Tambahan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.04.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Anggaran Pendapatan dan Belanja Negara-Perubahan (APBN-P)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">MONITORING PROGAM DAN ANGGARAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">EVALUASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.06.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Evaluasi Progam dan Anggaran</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PR.06.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sistem Akuntabilitas Kinerja Instansi Pemerintah (SAKIP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PR.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN PENATAAN ARSITEKTUR DAN INFORMASI KINERJA (ADIK)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KS</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KERJASAMA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KS.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERJANJIAN KERJA SAMA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KS.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kerja sama Dalam Negeri</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KS.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kerja sama Luar Negeri</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">HUKUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PRODUK HUKUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Produk Hukum yang Bersifat Pengaturan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Produk Hukum yang Bersifat Penetapan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">TELAAH HUKUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Telaah Hukum Internal</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Telaah Hukum Eksternal</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Telaah Perjanjian</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HK.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Telaah Akta</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">SOSIALISASI / PENYULUHAN PRODUK HUKUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">BANTUAN / KONSULTASI HUKUM / ADVOKASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">HAK ATAS KEKAYAAN INTELEKTUAL (HAKI)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HK.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KASUS / SENGKETA UMUM</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">ORTALA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">ORGANISASI DAN KELEMBAGAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisis Organisasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Evaluasi Organisasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">ANALISA JABATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisa Jabatan Struktural</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisa Jabatan Fungsional Tertentu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisa Jabatan Fungsional Umum</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">EVALUASI JABATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">STANDAR KOMPETENSI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Standar Kompetensi Jabatan Struktural</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Standar Kompetensi Jabatan Fungsional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">ANALISIS BEBAN KERJA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">TATA LAKSANA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.05.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan dan Penyelarasan Proses Bisnis</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.05.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan dan Penyelarasan SOP</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.05.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Budaya Organisasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">OT.05.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tata Hubungan Kerja</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">OT.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">REFORMASI BIROKRASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KEARSIPAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERSURATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengurusan Surat Masuk</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengurusan Surat Keluar</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN ARSIP DINAMIS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Sistem</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pembinaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Monitoring</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN ARSIP INAKTIF</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penataan, penyimpanan, pemeliharaan, pengolahan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Peminjaman Arsip</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN ARSIP MEDIA BARU</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penataan, penyimpanan, pemeliharaan, pengolahan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Peminjaman Arsip Media Baru</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUTAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.04.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemindahan Arsip</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.04.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemusnahan Arsip</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AR.04.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyerapan Arsip Statis</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AR.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">EVALUASI SISTEM INFORMASI KEARSIPAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TU</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">TATA USAHA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TU.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERSURATAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TU.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGGANDAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TU.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DISTRIBUSI SURAT DINAS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">RT</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KERUMAHTANGGAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8zc3">RT.00</td>
+    <td class="tg-32fi">PERJALANAN DINAS PIMPINAN DPD RI</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">RT.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">FASILITAS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">RT.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kendaraan Dinas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">RT.01.01</td>
+    <td class="tg-32fi">Ruang Rapat</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">RT.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Telekomunikasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">RT.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kosumsi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">RT.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGAMANAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">HUBUNGAN MASYARAKAT</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENERANGAN DAN PUBLIKASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DENGAR PENDAPAT / HEARING DPR - RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">HUBUNGAN ANTAR LEMBAGA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Instansi / Pemerintah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Organisasi Internasional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perusahaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Organisasi Kemasyarakatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perguruan Tinggi / Sekolah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.02.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Bakohumas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KEPROTOKOLAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Upacara / Acara Kedinasan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kunjungan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.03.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Agenda Pimpinan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.03.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengaman Pimpinan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DOKUMENTASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENERTIBAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">TANDA KENANG - KENANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">UCAPAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN WEBSITE</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">LAYANAN KEHUMASAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.09.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Layanan Website</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">HM.09.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Layanan Informasi Publik</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.10</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGADUAN MASYARAKAT</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">HM.11</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PAMERAN / SAYEMBARA / LOMBA,FESTIVAL, PEMBUATAN SPANDUK DAN IKLAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PS</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERPUSTAKAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PS.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYIMPANAN DEPOSIT BAHAN PUSTAKA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Bukti Penerimaan Koleksi Bahan Pustaka Deposit</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Administrasi pengelolaan Deposit Bahan Pustaka</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PS.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGADAAN DAN PENGOLAHAN BAHAN PUSTAKA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Buku induk koleksi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar buku terseleksi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar buku dalam pemesanan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar buku dan permintaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar penerimaan bahan pustaka hasil pembelian, hadiah deposit,hibah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar pengiriman Bahan Pustaka Surplus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Lembar kerja pengolahan BP (Buram, Pengkatalogan)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Shelf list / Jajaran Kartu utama (master list)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar tambahan Buku (Assesion list)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PS.01.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar jajaran kendali (Subyek dan Pengarang)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PS.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGEMBANGAN DAN KERJASAMA KEPUSTAKAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PS.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENDOKUMENTASIAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">TEKNOLOGI INFORMASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">RENCANA STRATREGIS / MASTERPLAN PEMBANGUNAN SISTEM INFORMASI (SIM)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KEBIJAKAN TEKNOLOGI INFORMASI DAN KOMUNIKASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">TI.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sistem Aplikasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">TI.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Infrastruktur dan jaringan komunikasi data</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">TI.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Basis data dan informasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGEMBANGAN SISTEM INFORMASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN SISTEM INFORMASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">LAPORAN PENGGUNA TEKNOLOGI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DOKUMENTASI ARSITEKTUR DAN IMPLEMENTASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEREKAMAN DAN PEMUTAKHIRAN DATA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">MIGRASI SISTEM APLIKASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DOKUMEN HOSTING</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.09</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">LAYANAN BACK-UP DATA DIGITAL</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.10</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DATABASE</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.11</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">DESIGN INFORMASI DAN KOMUNIKASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">TI.12</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">EVALUASI SISTEM DATA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PENGAWASAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">AUDIT</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">REVIU</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">EVALUASI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGADUAN / PELAPORAN INTERNAL DAN EKSTERNAL</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGAWASAN UNTUK TUJUAN TERTENTU</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">LAPORAN HASIL PENGAWASAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMANTAUAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.06.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemantauan pelaksanaan kegiatan / progam</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.06.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tuntutan Ganti Rugi (TGR)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.06.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemantauan Tindak Lanjut Laporan Hasil Pengawasan (TLLHP)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.06.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penerapan Early Warning System</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.06.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pemantauan Disiplin Pegawai</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN LAPORAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.07.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Berkala</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.07.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PW.07.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Laporan Perkembangan (Progress Report)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PW.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KEGIATAN PENGAWASAN LAINYA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PL</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PERLENGKAPAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PL.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PERENCANAAN PENGADAAN BARANG DAN JASA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.00.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisis kebutuhan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.00.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tata ruang</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.00.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Daftar Perkenalan Mampu</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PL.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PELAKSANAAN PENGADAAN BARANG DAN JASA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Alat Tulis Kantor</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Perlengkapan Kantor</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tanah dan Bangunan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kendaraan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Intalasai / Jaringan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Peralatan Kearsipan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.01.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Jasa Konsultasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">PL.01.07</td>
+    <td class="tg-32fi">Jasa Lainya</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PL.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGELOLAAN BARANG</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyimpanan barang milik negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Distribusi / Penyaluran barang milik negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.02.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Inventarisasi barang milik negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.02.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penghapusan barang milik negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PL.02.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelaporan barang milik negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PL.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMELIHARAAN / PERAWATAN BARANG MILIK NEGARA</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="2">SUBSTANTIF</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"><span style="font-weight:bold">KODE KLASIFIKASI</span></td>
+    <td class="tg-7btt"><span style="font-weight:bold">Jenis Arsip</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">FI</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PARTISIPASI PADA FORUM INTERNASIONAL</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">FI.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Partisipasi Pada Sidang Parlemen Internasional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">FI.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Partisipasi Pada Sidang Forum-Forum Relevan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">FI.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Partisipasi Pada Sidang Forum Kerjasama Internasional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">FI.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Partisipasi Pada Sidang Forum Diskusi Bersama Kementrian Luar Negeri</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KR</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KERJA SAMA PARLEMEN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KR.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Review Aturan Kerja Sama</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KR.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Tata Cara Penyusunan Statement dan Pendapat DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KR.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kerja Sama Masyarakat ASEAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KR.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Kerja Sama dengan Dunia Usaha</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KR.04</span></td>
+    <td class="tg-f8tv">Regional Diplomatic Gathering</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PK</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PANITIA KHUSUS</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PK.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dukungan Asistensi Panitia Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PK.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Inventaris Panitia Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PK.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan pandangan / pendapat Panitia Khusus</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KL</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">KAPASITAS KELEMBAGAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KL.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN HASIL KERJA BADAN PENGEMBANGAN KAPASITAS KELEMBAGAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.00.00</span></td>
+    <td class="tg-f8tv">Expert Meeting / Pertemuan Para Ahli / Pakar</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.00.01</span></td>
+    <td class="tg-f8tv">Upgrading Course</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.00.02</span></td>
+    <td class="tg-f8tv">Peer Review</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KL.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENGKAJIAN SISTEM KETATANEGARAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.01.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dialog Dengan Mass Media</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.01.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dialog Dengan Masyarakat</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.01.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Dialog Akademisi / Universitas</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.01.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Inventarisasi Materi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.01.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Studi Komparasi / Refrensi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KL.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">SOSIALISASI HASIL PENGKAJIAN SISTEM KETATANEGARAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.02.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sosialisasi Hasil-Hasil Kerja Sama dengan Perguruan Tingggi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KL.02.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sosialisasi dengan Masyarakat</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KL.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN BUKU LAPORAN KEGIATAN PENGEMBANGAN KAPASITAS KELEMBAGAAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">LC</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">LAW CENTER</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">LC.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pengujian / Examinasi Hukum</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">LC.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penelitian / Pengkajian Dan Problematikanya</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">LC.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Jurnal Law Center</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PENYUSUNAN PERATURAN PERUNDANG-UNDANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN USUL PROGAM LEGISLASI NASIONAL (PROLEGNAS)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN USUL RUU DARI DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN PANDANGAN / PENDAPAT PERTIMBANGAN DPD RI ATAS RUU TERTENTU</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN PERTIMBANGAN DPD RI ATAS HASIL PEMERIKSAAAN KEUANGAN NEGARA DAN CALON ANGGOTA BPK</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PU.03.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Pertimbangan DPD RI atas Hasil Pemeriksaan Keuangan Negara / HASPEM BPK</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PU.03.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Pertimbangan DPD RI Atas Calon Anggota BPK</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN HASIL PENGAWASAN DPD RI ATAS PELAKSANAAN UNDANG - UNDANG</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PEMBAHASAN RANCANGAN UNDANG - UNDANG BERSAMA DPR DAN PRESIDEN (PEMERINTAH)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">PENYUSUNAN LAPORAN KINERJA PERANCANGAN UNDANG - UNDANG</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PU.07</span></td>
+    <td class="tg-f8tv">Policy Brief Pelaksanaan Tugas Konstitusional DPD RI</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AM</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PENYERAPAN / PENJARINGAN ASPIRASI MASYARAKAT</span></td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.00</td>
+    <td class="tg-32fi">Penjaringan Aspirasi / Isu Dari Masyarakat / Konstituen</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.01</td>
+    <td class="tg-32fi">Penjaringan Aspirasi / Isu Dari Pemerintah Daerah Dan DPRD</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.02</td>
+    <td class="tg-32fi">Penjaringan Isu Pada Masa Reses</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.03</td>
+    <td class="tg-32fi">Monitoring Kebijakan Daerah</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.04</td>
+    <td class="tg-32fi">Kajian Terhadap Isu Stratregis Kedaerahan</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.05</td>
+    <td class="tg-32fi">Diskusi Publik</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.06</td>
+    <td class="tg-32fi">Konsolidasi DPD RI dengan Stakeholder</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.07</td>
+    <td class="tg-32fi">Advokasi dan Resolusi Permasalahan Daerah</td>
+  </tr>
+  <tr>
+    <td class="tg-32fi">AM.08</td>
+    <td class="tg-32fi">Simulasi Anggaran Pusat dan Daerah</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KE</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KODE ETIK DEWAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Evaluasi dan Penyempurnaan Tata Tertib DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyempurnaan Kode Etik DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyempurnaan Tata Beracara Badan Kehormatan DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Persidangan Badan Kehormatan Atas Pengaduan Masyarakat Terhadap Dugaan Pelanggaran Tata Tertib dan Kode Etik DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sosialisasi Pelaksanaan Tugas Badan Kehormatan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KE.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Rekapitulasi Kehadiran Anggota DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">PM</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PANITIA MUSYAWARAH DEWAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyelenggaraan Sidang Paripurna</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyelenggaraan Pleno Panitia Musyawarah DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelaksanaan Sidang Bersama DPD - DPR RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Pelaksanaan Sidang Koordinasi Antar Biro Persidangan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.04</span></td>
+    <td class="tg-f8tv">Executive Brief Tim Kerja Panitia Musyawarah</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Sosialisasi Hasil Kerja Panitia Musyawarah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Konsep Pokok-Pokok Materi Sidang</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">PM.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Konsep Jadwal Sidang DPD RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">JB</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">PENGKAJIAN DAN PENGEMBANGAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Analisis Kebijakan Publik</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Klarifikasi Keputusan DPD RI Yang disampaikan ke DPR RI</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penguatan Jaringan Dengan Lembaga Penelitian</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.03</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyelenggaraan Seminar / Workshop dan Konferensi Nasional</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.04</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Pengkajian / Penelitian Tentang Hukum dan Perundang-Undangan serta kajian tentang kebijakan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.05</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyelenggara Koordinasi, Perumusan dan Dukungan Dalam Perancangan Peraturan Perundang-Undangan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.06</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyelenggara Jaringan Dokumentasi dan Informasi Hukum</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.07</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Laporan Pelaksanaan Tugas Setjen DPD RI dan Laporan Kinerja Lembaga</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">JB.08</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penertiban Jurnal Ilmiah</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">KA</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">KEBIJAKAN ANGGARAN DEWAN</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KA.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penyusunan Kebijakan Anggaran dan Kebijakan Kerumahtanggaan</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">KA.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penelitian Terhadap R-APBN dan APBNP Sebagai Bahan Pokok</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"><span style="font-weight:bold">AP</span></td>
+    <td class="tg-fymr"><span style="font-weight:bold">AKUNTABILITAS PUBLIK</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AP.00</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Penelaah dan tindak lanjut hasil pemeriksaan BPK yang berindikasi kerugian negara</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AP.01</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Menampung dan menindaklanjuti atas pengaduan masyarakat terkait dengan korupsi dan maladministrasi</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:normal">AP.02</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">Hasil lapioran dan rekomendasi tindak lanjut pengaduan masyarakat</span></td>
+  </tr>
+</tbody>
+</table></div></p></div>					</div>
 				</div>
               
 			</div>
